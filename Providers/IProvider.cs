@@ -7,7 +7,7 @@ interface IProvider
     // Method that returns the result object
     object ExecuteAndGetResult(Dictionary<string, object> inputs);
 
-    // Method to extract specific values from the result without reflection
+    // Method to extract specific values
     object? ExtractInput(object result, string key);
 
     // Default implementation that handles the common extraction logic
